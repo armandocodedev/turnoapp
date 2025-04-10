@@ -18,6 +18,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run Playwright tests
+        env:
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_WHATSAPP_SENDER: ${{ secrets.TWILIO_WHATSAPP_SENDER }}
+          TWILIO_WHATSAPP_RECEIVER: ${{ secrets.TWILIO_WHATSAPP_RECEIVER }}
         run: npx playwright test
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
