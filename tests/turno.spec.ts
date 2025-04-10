@@ -12,8 +12,6 @@ test('has available dates', async ({ page }) => {
   //await page.getByRole('link', {name: 'Iniciar Trámite en Línea'}).dispatchEvent('click');
   //await page.getByLabel('Elegir día y hora').click();
 
-  await sendTemplateMessage({"1": "12/1", "2": "Verificando turnos"});
-
   var elegirHoraBtnLocator = page.locator('input[type=submit]');
   await expect(elegirHoraBtnLocator).toContainText('Elegir');
   await expect(async () => {
