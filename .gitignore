@@ -1,0 +1,60 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Environment files with secrets
+.env
+.secrets
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Playwright specific
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Coverage directory
+/coverage/
+
+# Build outputs
+/dist/
+/build/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-*
+.project
+.classpath
+.settings/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local runtime files
+*.pid
+*.seed
+*.pid.lock
