@@ -5,8 +5,7 @@ on:
   pull_request:
     branches: [main, master]
   schedule:
-    - cron: "0 */1 * * *" # Run every hour (UTC)
-    - cron: "0,20,40 3 * * *" # Run at 00:00, 00:20, and 00:40 Uruguay time
+    - cron: "29 */1 * * *" # Run every hour (UTC)
 jobs:
   test:
     timeout-minutes: 60
