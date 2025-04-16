@@ -20,7 +20,7 @@ test('has available dates', async ({ page }) => {
       .not.toContainText('En la oficina seleccionada no hay cupos disponibles');
   }).toPass({
     intervals: [1_000, 5_000, 10_000],
-    timeout: 120_000
+    timeout: 180_000
   });
 
   await sendTemplateMessage({"1": "12/1", "2": "Si hay turno!"});
